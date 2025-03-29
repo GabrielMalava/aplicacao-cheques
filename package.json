@@ -1,0 +1,21 @@
+{
+  "name": "aplicacao-cheques",
+  "version": "1.0.0",
+  "description": "Aplicação para gerenciar cheques",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "author": "Seu Nome",
+  "license": "ISC"
+}

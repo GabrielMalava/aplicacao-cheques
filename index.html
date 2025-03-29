@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Cheques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <button id="group-by-date">Agrupar por Data de Vencimento</button>
+        <button id="group-by-bank">Agrupar por Banco</button>
+        <button id="group-by-client">Agrupar por Cliente</button>
+        <!-- Botão para carregar cheques registrados -->
+        <button id="load-cheques">Carregar Cheques Registrados</button>
+    </div>
+
+    <div class="container">
+        <h1>Gerenciador de Cheques</h1>
+        <form id="cheque-form">
+            <input type="text" id="nome-cliente" placeholder="Nome do Cliente" required>
+            <input type="number" id="numero-cheque" placeholder="Nº do Cheque" required>
+            <input type="number" id="valor" placeholder="Valor" required>
+            <input type="date" id="data-vencimento" required>
+            <input type="text" id="codigo-banco" placeholder="Código do Banco" required>
+            <button type="submit">Adicionar Cheque</button>
+        </form>
+        <div>
+            <button id="sort-by-date">Ordenar por Data de Vencimento</button>
+        </div>
+        <table id="cheque-table">
+            <thead>
+                <tr>
+                    <th>Nome do Cliente</th>
+                    <th>Nº Cheque</th>
+                    <th>Valor</th>
+                    <th>Data de Vencimento</th>
+                    <th>Código do Banco</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
